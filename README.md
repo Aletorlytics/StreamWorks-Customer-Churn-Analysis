@@ -4,11 +4,11 @@
 ### Table of Contents
 - [Business Goal](#business-goal)
 - [Business Problem](business-problem)
+- [Dataset Overview](#dataset-overview)
 
   
 ### 🎯 Business Goal
-StreamWorks Media is a UK-based video streaming platform operating in a highly competitive market alongside global players such as Netflix and Amazon Prime. As customer acquisition costs continue to rise, retaining existing subscribers has become a critical business priority.
-The purpose of this analysis is to understand why customers churn, identify early warning signals, and provide data-driven insights to support targeted retention strategies.
+StreamWorks Media is a UK-based video streaming platform operating in a highly competitive market alongside global players such as Netflix and Amazon Prime. As customer acquisition costs continue to rise, retaining existing subscribers has become a critical business priority.The purpose of this analysis is to understand why customers churn, identify early warning signals, and provide data-driven insights to support targeted retention strategies.
 
 The primary business goals of this project are:
 - Understand churn patterns and customer behaviour
@@ -17,8 +17,7 @@ The primary business goals of this project are:
 - Analyze revenue impacting behaviors such as watch time and tenure
 
 ### 🧩 Business Problem
-StreamWorks Media faces increasing customer churn, which directly impacts recurring revenue and growth. Without understanding the behavioural and engagement drivers behind churn, retention efforts remain reactive rather than proactive.
-This project aims to use customer data to uncover churn drivers and build predictive models that support smarter, earlier retention decisions.
+StreamWorks Media faces increasing customer churn, which directly impacts recurring revenue and growth. Without understanding the behavioural and engagement drivers behind churn, retention efforts remain reactive rather than proactive.This project aims to use customer data to uncover churn drivers and build predictive models that support smarter, earlier retention decisions.
 
 ### 🗂 Dataset Overview
 The dataset contains anonymized user-level subscription and engagement data, including:
