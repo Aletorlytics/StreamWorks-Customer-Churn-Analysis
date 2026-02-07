@@ -68,8 +68,6 @@ o	Referred users had lower churn rates
 o	Retained users had significantly higher average watch time
 - Correlation analysis showed:
 o	Strong negative relationships between churn and both tenure and watch time
-Image placeholder:
-📷 Add boxplot or bar chart comparing churn vs watch time or promotions
 
 ### ii Statistical Analysis
 Correlation Analysis
@@ -77,35 +75,56 @@ Correlation Analysis
 The correlation analysis reveals strong relationships between engagement metrics. Watch time and tenure show a strong positive correlation, while watch time has a negative relationship with churn. This indicates that lower engagement is a strong warning signal for cancellation.
 
 <img width="959" height="565" alt="Screenshot 2025-10-21 080407" src="https://github.com/user-attachments/assets/e9a4db45-2f0e-447e-9edc-92d32176ddfd" />
-
 <img width="894" height="645" alt="Screenshot 2025-10-21 080504" src="https://github.com/user-attachments/assets/2326ab77-4518-4022-9f26-c2a066089769" />
 
 ### 🤖 Predictive Modelling Summary
-Logistic Regression (Churn Prediction)
-- Successfully classified churned vs retained users
-- Strong performance based on accuracy, F1 score, and AUC
-- Most influential churn predictors:
-1.	Average watch time
-2.	Tenure duration
-3.	Receipt of promotions
-Image placeholder:
-### 📷 Add ROC curve image here
+Model Results
+Logistic Regression, Churn Prediction
 <img width="912" height="585" alt="Screenshot 2025-10-21 081155" src="https://github.com/user-attachments/assets/179eafee-5d17-4c36-a19b-971bf0ca89c7" />
+The logistic regression model was used to predict customer churn.
+- The model achieved strong classification performance
+- ROC curve shows good separation between churned and retained users
+- The model is effective at identifying high risk churn customers early
+
+Top 3 Predictors of Churn
+1.	Watch time, lower watch time increases churn risk
+2.	Tenure, shorter tenure users are more likely to churn
+3.	Promotion status, users without promotions churn more
+These results confirm that engagement and early lifecycle experience drive churn
 
 Linear Regression (Tenure Prediction)
 - Used to understand factors affecting customer loyalty
 - Showed that:
-o	Higher watch time increases tenure
-o	Premium subscription users tend to stay longer
-o	Promotions positively impact customer longevity
-
-### 📷 Add residual plot or predicted vs actual plot here
+  - Higher watch time increases tenure
+  - Premium subscription users tend to stay longer
+  - Promotions positively impact customer longevity
 <img width="894" height="645" alt="Screenshot 2025-10-21 080504" src="https://github.com/user-attachments/assets/38c55df2-32a2-40ba-a552-ae395664cefc" />
 
 ### 📌 Interpretation of Results
 The analysis shows that customer engagement is the strongest driver of retention. Users who watch more content and remain active longer are significantly less likely to churn.
 Promotions and referrals act as effective retention tools, especially for new users. Mobile-heavy users show slightly higher churn risk, suggesting potential experience or usability challenges.
+### 📖 Business Questions Answered
+1.	Do users who receive promotions churn less?
+### Yes. Promotional offers are associated with lower churn rates.
+2.	Does watch time impact churn likelihood?
+### Yes. Lower watch time strongly increases the likelihood of churn.
+3.	Are mobile-dominant users more likely to cancel?
+### Yes. Mobile dominant users show slightly higher churn.
+4.	Top 3 features influencing churn
+### Watch time, tenure, and promotion status.
+5.	Which customer segments should be prioritized?
+### New users with low watch time and no promotions.
+6.	What affects watch time or tenure?
+### Tenure length, promotions, and subscription type.
 
+### ❗ Recommendations
+- Proactively target low-watch-time users with personalized promotions
+- Focus retention efforts on early lifecycle customers
+- Improve mobile user experience to reduce mobile-driven churn
+### Data Limitations and Risks
+- Class imbalance between churned and retained users
+- Limited behavioural granularity beyond watch time
+- Potential feature leakage if future information is used
 ### 🧠 Key Takeaways 
 - Demonstrates end-to-end data analysis workflow
 - Combines statistics, machine learning, and business reasoning
