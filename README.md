@@ -1,4 +1,4 @@
-# 🚀StreamWorks-Customer-Churn-Analysis
+# StreamWorks-Customer-Churn-Analysis
 ## Analyzes customer churn for a video streaming platform using Python, statistical analysis, and machine learning to uncover retention drivers and actionable business insights.
 ### Table of Contents
 ---
@@ -20,7 +20,7 @@
 - [Key Takeaways](#key-takeaways)
 
   
-### 🎯Objective
+### Objective
 StreamWorks Media is a UK-based video streaming platform operating in a highly competitive market alongside global players such as Netflix and Amazon Prime. As customer acquisition costs continue to rise, retaining existing subscribers has become a critical business priority.The purpose of this analysis is to understand why customers churn, identify early warning signals, and provide data-driven insights to support targeted retention strategies.
 
 The primary business goals of this project are:
@@ -29,10 +29,10 @@ The primary business goals of this project are:
 - Predict churn probability to enable early intervention
 - Analyze revenue impacting behaviors such as watch time and tenure
 ---
-### 🧩Business Problems
+### Business Problems
 StreamWorks Media faces increasing customer churn, which directly impacts recurring revenue and growth. Without understanding the behavioural and engagement drivers behind churn, retention efforts remain reactive rather than proactive.This project aims to use customer data to uncover churn drivers and build predictive models that support smarter, earlier retention decisions.
 
-### 🗂Data Overview
+### Data Overview
 The dataset contains anonymized user-level subscription and engagement data, including:
 - Demographics such as age, gender, and country
 - Subscription details, including plan type and monthly fee
@@ -41,7 +41,7 @@ The dataset contains anonymized user-level subscription and engagement data, inc
 - Churn indicator showing whether a user cancelled their subscription
 The dataset represents a mix of active and churned users across multiple regions.
 
-### 🎯Purpose of the Analysis
+### Purpose of the Analysis
 The purpose of this analysis is to:
 - Explore patterns and behaviours linked to customer churn
 - Quantify the impact of engagement and tenure on churn likelihood
@@ -49,7 +49,7 @@ The purpose of this analysis is to:
 - Translate analytical findings into clear business recommendations
 This project is designed to support non-technical decision-makers with actionable insights.
 
-### 🛠Tools & Technologies
+### Tools & Technologies
 - Python
 - Pandas and NumPy for data manipulation
 - Matplotlib and Seaborn for visualization
@@ -58,7 +58,8 @@ This project is designed to support non-technical decision-makers with actionabl
 - Jupyter Notebook for analysis and documentation
 
 ---
-### 🧹Cleaning Summary
+###  Cleaning Summary
+
 The dataset required several preparation steps before analysis:
 - Converted date columns to proper datetime format
 - Created tenure_days from signup and last active dates
@@ -71,7 +72,7 @@ The dataset required several preparation steps before analysis:
 <img width="571" height="563" alt="Screenshot 2026-02-06 153402" src="https://github.com/user-attachments/assets/26630a1d-40b9-421e-82ed-894978865129" />
 
 ---
-### 🧠Feature Engineering Summary
+### Feature Engineering Summary
 New features were created to capture customer behaviour better:
 - tenure_days: Number of days a user stayed active
 - is_loyal: Flag indicating users with tenure greater than 180 days
@@ -81,7 +82,7 @@ New features were created to capture customer behaviour better:
 These features helped capture user engagement and loyalty more effectively.
 ---
 
-### 📈Key Findings
+### Key Findings
 Statistical tests were used to validate behavioural differences between churned and retained users:
 - Chi-square tests showed that:
 o	Users who received promotions churned less
@@ -105,7 +106,7 @@ The correlation analysis reveals strong relationships between engagement metrics
 <img width="894" height="645" alt="Screenshot 2025-10-21 080504" src="https://github.com/user-attachments/assets/2326ab77-4518-4022-9f26-c2a066089769" />
 
 ---
-### 🤖 Predictive Modelling
+###  Predictive Modelling
 Model Results
 Logistic Regression, Churn Prediction
 <img width="912" height="585" alt="Screenshot 2025-10-21 081155" src="https://github.com/user-attachments/assets/179eafee-5d17-4c36-a19b-971bf0ca89c7" />
@@ -129,12 +130,12 @@ These results confirm that engagement and early lifecycle experience drive churn
 <img width="894" height="645" alt="Screenshot 2025-10-21 080504" src="https://github.com/user-attachments/assets/38c55df2-32a2-40ba-a552-ae395664cefc" />
 
 ---
-### 📌 Interpretation of Results
+###  Interpretation of Results
 The analysis shows that customer engagement is the strongest driver of retention. Users who watch more content and remain active longer are significantly less likely to churn.
 Promotions and referrals act as effective retention tools, especially for new users. Mobile-heavy users show slightly higher churn risk, suggesting potential experience or usability challenges.
 
 ---
-### 📖 Business Questions Answered
+###  Business Questions Answered
 1.	Do users who receive promotions churn less?
 ### Yes. Promotional offers are associated with lower churn rates.
 2.	Does watch time impact churn likelihood?
@@ -149,7 +150,7 @@ Promotions and referrals act as effective retention tools, especially for new us
 ### Tenure length, promotions, and subscription type.
 
 ---
-### ❗ Recommendations
+###  Recommendations
 - Proactively target low-watch-time users with personalized promotions
 - Focus retention efforts on early lifecycle customers
 - Improve mobile user experience to reduce mobile-driven churn
@@ -159,7 +160,7 @@ Promotions and referrals act as effective retention tools, especially for new us
 - Limited behavioural granularity beyond watch time
 - Potential feature leakage if future information is used
   
-### 🧠Key Takeaways 
+### Key Takeaways 
 - Demonstrates end-to-end data analysis workflow
 - Combines statistics, machine learning, and business reasoning
 - Focuses on real-world subscription and retention challenges
